@@ -30,15 +30,15 @@
           <p class="text-gray-600 dark:text-gray-300">Utility-first CSS framework for rapid UI development</p>
         </div>
 
-        <div class="text-center p-4 group hover:scale-105 transition-transform duration-300">
-          <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 dark:group-hover:bg-purple-800 transition-colors">
-            <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Vite</h3>
-          <p class="text-gray-600 dark:text-gray-300">Lightning-fast build tool with intelligent caching</p>
-        </div>
+                 <div class="text-center p-4 group hover:scale-105 transition-transform duration-300">
+           <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 dark:group-hover:bg-purple-800 transition-colors">
+             <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+             </svg>
+           </div>
+           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Nuxt Build System</h3>
+           <p class="text-gray-600 dark:text-gray-300">Optimized build toolchain with intelligent caching</p>
+         </div>
 
         <div class="text-center p-4 group hover:scale-105 transition-transform duration-300">
           <div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 dark:group-hover:bg-yellow-800 transition-colors">

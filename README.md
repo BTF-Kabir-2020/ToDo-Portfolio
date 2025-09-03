@@ -13,6 +13,7 @@ A modern, professional portfolio website built with Nuxt.js, Vue.js, and Tailwin
 ## ✨ Features
 
 ### 🎨 Modern Design & UI/UX
+
 - **Beautiful Color Scheme**: Custom primary colors with soft gradients
 - **Dark/Light Mode**: Automatic theme switching with system preference support
 - **Responsive Design**: Mobile-first approach with breakpoint optimization
@@ -20,12 +21,14 @@ A modern, professional portfolio website built with Nuxt.js, Vue.js, and Tailwin
 - **Professional Layout**: Clean, modern design optimized for portfolios
 
 ### 📱 PWA & Mobile Experience
+
 - **Progressive Web App**: Installable on mobile devices
 - **Offline Support**: Service worker for offline functionality
 - **App-like Experience**: Native app feel on mobile devices
 - **Touch Optimized**: Mobile-friendly interactions and gestures
 
 ### 🚀 Advanced Todo Application
+
 - **Core Features**: Add, edit, delete, and manage todos
 - **Priority System**: Low, Medium, High priority levels
 - **Due Date Management**: Set and track due dates
@@ -34,6 +37,7 @@ A modern, professional portfolio website built with Nuxt.js, Vue.js, and Tailwin
 - **Real-time Updates**: Instant UI updates
 
 ### 🔍 Comprehensive SEO
+
 - **Meta Tags**: Complete meta information for all pages
 - **Open Graph**: Social media optimization
 - **Twitter Cards**: Enhanced Twitter sharing
@@ -45,24 +49,28 @@ A modern, professional portfolio website built with Nuxt.js, Vue.js, and Tailwin
 ### 🛠️ Technology Stack
 
 #### Frontend Framework
+
 - **Nuxt.js 4** - Vue.js framework with SSR/SSG capabilities
 - **Vue 3** - Progressive JavaScript framework
 - **TypeScript** - Type-safe JavaScript development
 - **Composition API** - Modern Vue 3 API
 
 #### Styling & Design
+
 - **Tailwind CSS** - Utility-first CSS framework
 - **Custom Color Palette** - Professional color scheme
 - **Responsive Grid** - Flexible layout system
 - **Dark Mode Support** - Automatic theme switching
 
 #### State Management
+
 - **Pinia** - Intuitive state management for Vue
 - **Composables** - Reusable logic and state
 - **Local Storage** - Persistent data management
 
 #### Build & Development
-- **Vite** - Lightning-fast build tool
+
+- **Nuxt Build System** - Optimized build toolchain
 - **ESLint** - Code quality and consistency
 - **Prettier** - Automatic code formatting
 - **TypeScript** - Type safety and better DX
@@ -70,7 +78,8 @@ A modern, professional portfolio website built with Nuxt.js, Vue.js, and Tailwin
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - pnpm turbo 8+ (recommended) or npm
 
 ### Installation
@@ -136,6 +145,7 @@ public/
 ## 🎨 Design System
 
 ### Color Palette
+
 - **Primary**: Professional blue tones (#0ea5e9)
 - **Surface**: Clean white and dark surfaces
 - **Background**: Subtle gradients and backgrounds
@@ -143,12 +153,14 @@ public/
 - **Accents**: Strategic use of primary colors
 
 ### Typography
+
 - **Font Family**: Inter (system fallbacks)
 - **Headings**: Bold weights for hierarchy
 - **Body Text**: Optimized for readability
 - **Responsive**: Scalable text sizes
 
 ### Components
+
 - **Cards**: Soft shadows and rounded corners
 - **Buttons**: Hover effects and transitions
 - **Forms**: Clean, accessible form elements
@@ -157,18 +169,21 @@ public/
 ## 🔍 SEO Features
 
 ### Meta Tags
+
 - Complete title, description, and keywords
 - Open Graph tags for social sharing
 - Twitter Card optimization
 - Language and region specifications
 
 ### Technical SEO
+
 - XML sitemap with proper priorities
 - Robots.txt with crawling instructions
 - Canonical URLs
 - Structured data (Schema.org)
 
 ### Performance SEO
+
 - Fast loading times
 - Mobile optimization
 - Accessibility improvements
@@ -177,12 +192,14 @@ public/
 ## 📱 PWA Features
 
 ### Web App Manifest
+
 - App name and description
 - Icons for different sizes
 - Theme colors and display modes
 - Shortcuts for quick access
 
 ### Service Worker
+
 - Offline functionality
 - Caching strategies
 - Background sync
@@ -191,18 +208,21 @@ public/
 ## 🚀 Deployment
 
 ### Static Generation (Recommended)
+
 ```bash
 pnpm turbo generate
 # Deploy .output/public to any static hosting
 ```
 
 ### Server-Side Rendering
+
 ```bash
 pnpm turbo build
 # Deploy .output/server to Node.js hosting
 ```
 
 ### Hosting Platforms
+
 - **Vercel**: Automatic deployments
 - **Netlify**: Static hosting with forms
 - **GitHub Pages**: Free hosting
@@ -212,12 +232,14 @@ pnpm turbo build
 ## 🧪 Development
 
 ### Code Quality
+
 - **ESLint**: JavaScript/TypeScript linting
 - **Prettier**: Code formatting
 - **TypeScript**: Type safety
 - **Vue SFC**: Single file components
 
 ### Testing
+
 - **Unit Tests**: Component testing
 - **E2E Tests**: End-to-end testing
 - **Performance**: Lighthouse testing
@@ -228,6 +250,7 @@ pnpm turbo build
 We welcome contributions! Please see our contributing guidelines.
 
 ### Development Setup
+
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
@@ -235,6 +258,7 @@ We welcome contributions! Please see our contributing guidelines.
 5. Submit a pull request
 
 ### Code Standards
+
 - Follow Vue.js style guide
 - Use TypeScript for type safety
 - Write meaningful commit messages

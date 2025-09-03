@@ -87,7 +87,7 @@ A modern, professional portfolio website built with Nuxt.js, Vue.js, and Tailwin
 ```bash
 # Clone the repository
 git clone https://github.com/BTF-Kabir-2020/ToDo-Portfolio-Nuxt.git
-cd btf-kabir-portfolio
+cd ToDo-Portfolio-Nuxt
 
 # Install dependencies
 pnpm turbo install

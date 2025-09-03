@@ -42,11 +42,11 @@
           </span>
           
           <!-- Tags -->
-          <div v-if="todo.tags.length > 0" class="flex flex-wrap gap-1">
+          <div v-if="todo.tags.length > 0" class="flex flex-wrap gap-2">
             <span 
               v-for="tag in todo.tags" 
               :key="tag"
-              class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+              class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 border border-primary-200 dark:border-primary-700 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors"
             >
               #{{ tag }}
             </span>

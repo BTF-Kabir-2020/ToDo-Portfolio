@@ -71,22 +71,25 @@
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Tags</label>
-            <input 
-              @keydown="addTag"
-              type="text"
-              class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-              placeholder="Press Enter to add tag">
+            <div class="relative">
+              <input 
+                ref="tagInput"
+                @keydown="addTag"
+                type="text"
+                class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                placeholder="Type tag and press Enter">
+            </div>
             <div class="flex flex-wrap gap-2 mt-2">
               <span 
                 v-for="tag in newTodo.tags" 
                 :key="tag"
-                class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200"
+                class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 border border-primary-200 dark:border-primary-700"
               >
-                {{ tag }}
+                #{{ tag }}
                 <button 
                   @click="removeTag(tag)"
                   type="button"
-                  class="ml-1 text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-200"
+                  class="ml-2 text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-200 hover:bg-primary-200 dark:hover:bg-primary-800 rounded-full w-4 h-4 flex items-center justify-center transition-colors"
                 >
                   ×
                 </button>
@@ -214,6 +217,34 @@
           </div>
         </div>
         
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Tags</label>
+          <div class="relative">
+            <input 
+              ref="editTagInput"
+              @keydown="addEditTag"
+              type="text"
+              class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              placeholder="Type tag and press Enter">
+          </div>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span 
+              v-for="tag in editingTodo.tags" 
+              :key="tag"
+              class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 border border-primary-200 dark:border-primary-700"
+            >
+              #{{ tag }}
+              <button 
+                @click="removeEditTag(tag)"
+                type="button"
+                class="ml-2 text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-200 hover:bg-primary-200 dark:hover:bg-primary-800 rounded-full w-4 h-4 flex items-center justify-center transition-colors"
+              >
+                ×
+              </button>
+            </span>
+          </div>
+        </div>
+        
         <div class="flex justify-end space-x-3">
           <button 
             type="button"
@@ -327,5 +358,21 @@ const addTag = (event: KeyboardEvent) => {
 
 const removeTag = (tagToRemove: string) => {
   newTodo.value.tags = newTodo.value.tags.filter(tag => tag !== tagToRemove)
+}
+
+const addEditTag = (event: KeyboardEvent) => {
+  const target = event.target as HTMLInputElement
+  if (event.key === 'Enter' && target.value.trim() && editingTodo.value) {
+    if (!editingTodo.value.tags.includes(target.value.trim())) {
+      editingTodo.value.tags.push(target.value.trim())
+    }
+    target.value = ''
+  }
+}
+
+const removeEditTag = (tagToRemove: string) => {
+  if (editingTodo.value) {
+    editingTodo.value.tags = editingTodo.value.tags.filter(tag => tag !== tagToRemove)
+  }
 }
 </script>

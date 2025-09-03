@@ -1,0 +1,82 @@
+{
+  "name": "btf-kabir-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Full-Stack Developer Portfolio built with Nuxt.js, Vue.js, and Tailwind CSS. Features modern design, comprehensive SEO, PWA capabilities, and advanced todo application.",
+  "type": "module",
+  "private": false,
+  "packageManager": "pnpm@8.15.0",
+  "author": {
+    "name": "BTF Kabir",
+    "email": "PouyaGH2080@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BTF-Kabir-2020/btf-kabir-portfolio.git"
+  },
+  "homepage": "/",
+  "bugs": {
+    "url": "https://github.com/BTF-Kabir-2020/btf-kabir-portfolio/issues"
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack-developer",
+    "nuxt",
+    "vue",
+    "tailwind-css",
+    "typescript",
+    "pwa",
+    "seo",
+    "responsive-design",
+    "web-development",
+    "frontend",
+    "backend",
+    "modern-ui",
+    "dark-mode"
+  ],
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "build:static": "nuxt generate",
+    "build:hybrid": "nuxt build && nuxt generate",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "nuxt typecheck",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.2",
+    "nuxt": "^4.0.3",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.20",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/ui": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

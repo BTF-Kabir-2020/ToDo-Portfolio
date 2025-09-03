@@ -1,0 +1,32 @@
+{
+  "framework": "nuxt",
+  "buildCommand": "pnpm turbo build",
+  "devCommand": "pnpm turbo dev",
+  "installCommand": "pnpm install",
+  "outputDirectory": ".output/public",
+  "regions": ["iad1"],
+  "functions": {
+    "app/server/index.mjs": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}

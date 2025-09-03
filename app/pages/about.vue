@@ -76,77 +76,65 @@
      <div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-soft hover:shadow-soft-lg transition-all duration-300 p-8 mb-8 border border-gray-200 dark:border-gray-600">
       <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Key Features</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="flex items-start space-x-3 group hover:scale-105 transition-transform duration-300 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-          <div class="w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors">
-            <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-semibold text-gray-900 dark:text-white">Advanced Todo Management</h3>
-            <p class="text-gray-600 dark:text-gray-300">Create, edit, delete, and organize tasks with priorities, due dates, and tags</p>
-          </div>
-        </div>
+                 <div class="flex items-start space-x-3 group hover:scale-105 transition-transform duration-300 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+           <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-green-200 dark:group-hover:bg-green-800 transition-colors">
+             <span class="text-lg">✅</span>
+           </div>
+           <div>
+             <h3 class="font-semibold text-gray-900 dark:text-white">Advanced Todo Management</h3>
+             <p class="text-gray-600 dark:text-gray-300">Create, edit, delete, and organize tasks with priorities, due dates, and tags</p>
+           </div>
+         </div>
 
-        <div class="flex items-start space-x-3">
-          <div class="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-semibold text-gray-900">Persistent Storage</h3>
-            <p class="text-gray-600">Your todos are saved locally and persist between browser sessions</p>
-          </div>
-        </div>
+                 <div class="flex items-start space-x-3 group hover:scale-105 transition-transform duration-300 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+           <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors">
+             <span class="text-lg">💾</span>
+           </div>
+           <div>
+             <h3 class="font-semibold text-gray-900 dark:text-white">Persistent Storage</h3>
+             <p class="text-gray-600 dark:text-gray-300">Your todos are saved locally and persist between browser sessions</p>
+           </div>
+         </div>
 
-        <div class="flex items-start space-x-3">
-          <div class="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-semibold text-gray-900">Smart Filtering</h3>
-            <p class="text-gray-600">Filter tasks by status, priority, and search through titles and descriptions</p>
-          </div>
-        </div>
+                 <div class="flex items-start space-x-3 group hover:scale-105 transition-transform duration-300 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+           <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors">
+             <span class="text-lg">🔍</span>
+           </div>
+           <div>
+             <h3 class="font-semibold text-gray-900 dark:text-white">Smart Filtering</h3>
+             <p class="text-gray-600 dark:text-gray-300">Filter tasks by status, priority, and search through titles and descriptions</p>
+           </div>
+         </div>
 
-        <div class="flex items-start space-x-3">
-          <div class="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-semibold text-gray-900">Responsive Design</h3>
-            <p class="text-gray-600">Beautiful UI that works perfectly on all devices and screen sizes</p>
-          </div>
-        </div>
+                 <div class="flex items-start space-x-3 group hover:scale-105 transition-transform duration-300 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+           <div class="w-8 h-8 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-indigo-200 dark:group-hover:bg-indigo-800 transition-colors">
+             <span class="text-lg">📱</span>
+           </div>
+           <div>
+             <h3 class="font-semibold text-gray-900 dark:text-white">Responsive Design</h3>
+             <p class="text-gray-600 dark:text-gray-300">Beautiful UI that works perfectly on all devices and screen sizes</p>
+           </div>
+         </div>
 
-        <div class="flex items-start space-x-3">
-          <div class="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-                         <h3 class="font-semibold text-gray-900">Performance Optimized</h3>
-             <p class="text-gray-600">Built with Vite for fast builds and optimal runtime performance</p>
-          </div>
-        </div>
+                 <div class="flex items-start space-x-3 group hover:scale-105 transition-transform duration-300 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+           <div class="w-8 h-8 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-yellow-200 dark:group-hover:bg-yellow-800 transition-colors">
+             <span class="text-lg">⚡</span>
+           </div>
+           <div>
+             <h3 class="font-semibold text-gray-900 dark:text-white">Performance Optimized</h3>
+             <p class="text-gray-600 dark:text-gray-300">Built with Nuxt Build System for fast builds and optimal runtime performance</p>
+           </div>
+         </div>
 
-        <div class="flex items-start space-x-3">
-          <div class="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-semibold text-gray-900">Modern Development</h3>
-            <p class="text-gray-600">Built with the latest web technologies and best practices</p>
-          </div>
-        </div>
+                 <div class="flex items-start space-x-3 group hover:scale-105 transition-transform duration-300 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+           <div class="w-8 h-8 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-red-200 dark:group-hover:bg-red-800 transition-colors">
+             <span class="text-lg">🚀</span>
+           </div>
+           <div>
+             <h3 class="font-semibold text-gray-900 dark:text-white">Modern Development</h3>
+             <p class="text-gray-600 dark:text-gray-300">Built with the latest web technologies and best practices</p>
+           </div>
+         </div>
       </div>
     </div>
 

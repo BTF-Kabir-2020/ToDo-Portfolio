@@ -1,7 +1,7 @@
 {
   "framework": "nuxt",
-  "buildCommand": "pnpm turbo build",
-  "devCommand": "pnpm turbo dev",
+  "buildCommand": "pnpm build",
+  "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "outputDirectory": ".output/public",
   "regions": ["iad1"],

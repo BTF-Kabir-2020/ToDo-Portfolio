@@ -84,14 +84,14 @@ cd btf-kabir-portfolio
 pnpm install
 
 # Start development server
-pnpm turbo dev
+pnpm dev
 ```
 
 ### Available Commands
 
 ```bash
-pnpm turbo dev          # Development server
-pnpm turbo build        # Production build
+pnpm dev          # Development server
+pnpm build        # Production build
 pnpm generate     # Static site generation
 pnpm preview      # Preview production build
 pnpm lint         # Code linting
@@ -198,7 +198,7 @@ pnpm generate
 
 ### Server-Side Rendering
 ```bash
-pnpm turbo build
+pnpm build
 # Deploy .output/server to Node.js hosting
 ```
 

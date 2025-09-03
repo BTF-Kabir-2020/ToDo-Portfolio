@@ -71,7 +71,7 @@ A modern, professional portfolio website built with Nuxt.js, Vue.js, and Tailwin
 
 ### Prerequisites
 - Node.js 18+ 
-- pnpm 8+ (recommended) or npm
+- pnpm turbo 8+ (recommended) or npm
 
 ### Installation
 
@@ -81,21 +81,21 @@ git clone https://github.com/BTF-Kabir-2020/btf-kabir-portfolio.git
 cd btf-kabir-portfolio
 
 # Install dependencies
-pnpm install
+pnpm turbo install
 
 # Start development server
-pnpm dev
+pnpm turbo dev
 ```
 
 ### Available Commands
 
 ```bash
-pnpm dev          # Development server
-pnpm build        # Production build
-pnpm generate     # Static site generation
-pnpm preview      # Preview production build
-pnpm lint         # Code linting
-pnpm type-check   # TypeScript checking
+pnpm turbo dev          # Development server
+pnpm turbo build        # Production build
+pnpm turbo generate     # Static site generation
+pnpm turbo preview      # Preview production build
+pnpm turbo lint         # Code linting
+pnpm turbo type-check   # TypeScript checking
 ```
 
 ## 📁 Project Structure
@@ -192,13 +192,13 @@ public/
 
 ### Static Generation (Recommended)
 ```bash
-pnpm generate
+pnpm turbo generate
 # Deploy .output/public to any static hosting
 ```
 
 ### Server-Side Rendering
 ```bash
-pnpm build
+pnpm turbo build
 # Deploy .output/server to Node.js hosting
 ```
 

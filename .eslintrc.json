@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2022": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "plugins": ["vue"],
+  "globals": {
+    "definePageMeta": "readonly",
+    "useHead": "readonly",
+    "ref": "readonly",
+    "onMounted": "readonly",
+    "computed": "readonly",
+    "watch": "readonly",
+    "nextTick": "readonly"
+  },
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "vue/no-unused-vars": "error",
+    "vue/require-default-prop": "off",
+    "vue/require-prop-types": "off",
+    "vue/no-v-html": "warn",
+    "no-console": "warn",
+    "no-debugger": "error",
+    "no-unused-vars": "warn",
+    "prefer-const": "error",
+    "no-var": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "rules": {
+        "indent": "off"
+      }
+    }
+  ]
+}

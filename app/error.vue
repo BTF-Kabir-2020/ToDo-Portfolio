@@ -18,8 +18,8 @@
       
       <div class="space-y-4">
         <button 
-          @click="handleError"
           class="w-full bg-primary-600 text-white px-6 py-3 rounded-md hover:bg-primary-700 transition-colors"
+          @click="handleError"
         >
           Try Again
         </button>
@@ -34,7 +34,10 @@
       
       <div class="mt-8 text-sm text-gray-500">
         <p>If the problem persists, please contact us at</p>
-        <a href="mailto:PouyaGH2080@gmail.com" class="text-primary-600 hover:text-primary-700">
+        <a
+          href="mailto:PouyaGH2080@gmail.com"
+          class="text-primary-600 hover:text-primary-700"
+        >
           PouyaGH2080@gmail.com
         </a>
       </div>
@@ -45,9 +48,9 @@
 <script setup lang="ts">
 defineProps<{
   error: any
-}>()
+}>();
 
 const handleError = () => {
-  clearError()
-}
+  clearError();
+};
 </script>

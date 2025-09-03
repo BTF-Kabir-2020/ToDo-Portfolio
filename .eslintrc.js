@@ -5,28 +5,22 @@ module.exports = {
     node: true,
     es2022: true,
   },
-  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended'],
+  extends: [
+    '@nuxt/eslint-config',
+    '@vue/eslint-config-typescript',
+    'eslint:recommended',
+    '@typescript-eslint/recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:nuxt/recommended',
+    'prettier',
+  ],
   parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 2022,
     sourceType: 'module',
-    parser: {
-      js: 'espree',
-      ts: '@typescript-eslint/parser',
-      '<template>': 'espree',
-    },
+    parser: '@typescript-eslint/parser',
   },
-  plugins: ['vue'],
-  globals: {
-    definePageMeta: 'readonly',
-    useHead: 'readonly',
-    ref: 'readonly',
-    onMounted: 'readonly',
-    computed: 'readonly',
-    watch: 'readonly',
-    nextTick: 'readonly',
-    clearError: 'readonly',
-  },
+  plugins: ['@typescript-eslint', 'vue'],
   rules: {
     // Vue specific rules
     'vue/multi-word-component-names': 'off',
@@ -35,12 +29,23 @@ module.exports = {
     'vue/require-prop-types': 'off',
     'vue/no-v-html': 'warn',
 
+    // TypeScript rules
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'warn',
+
     // General rules
-    'no-console': 'off', // Allow console for debugging
+    'no-console': 'warn',
     'no-debugger': 'error',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off', // Use TypeScript version instead
     'prefer-const': 'error',
     'no-var': 'error',
+
+    // Nuxt specific
+    'nuxt/no-env-in-hooks': 'error',
+    'nuxt/no-this-in-fetch-data': 'error',
 
     // Code style
     indent: ['error', 2],
@@ -58,4 +63,9 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
 };
